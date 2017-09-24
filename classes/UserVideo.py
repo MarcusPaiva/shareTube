@@ -15,6 +15,7 @@ class UserVideo( Base ):
 
     id          = Column( Integer, primary_key = True )
     id_user     = Column( Integer, ForeignKey( 'users.id') )
+    name        = Column( String )
     date_posted = Column( Date )
     status      = Column( String )
     font        = Column( String )

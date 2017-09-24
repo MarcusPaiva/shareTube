@@ -13,6 +13,5 @@ class Post( Base ):
     id         = Column( Integer, primary_key = True )
     post       = Column( String )
     type       = Column( String )
-    status     = Column( String )
     visibility = Column( String )
-    like       = Column( String )
+    
