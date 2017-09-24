@@ -11,9 +11,10 @@ class User( Base ):
 
     id           = Column( Integer, primary_key = True )
     name         = Column( String )
+    gender       = Column( Integer )
     email        = Column( String )
     password     = Column( String )
-    type         = Column( String )
+    is_admin     = Column( String )
     brief        = Column( String )
     genre        = Column( Integer )
     status       = Column( String )

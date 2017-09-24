@@ -16,7 +16,7 @@ class PostComment( Base ):
 
     id          = Column( Integer, primary_key = True )
     id_user     = Column( Integer, ForeignKey( 'users.id') )
-    id_user     = Column( Integer, ForeignKey( 'posts.id') )
+    id_post     = Column( Integer, ForeignKey( 'posts.id') )
     date_posted = Column( Date )
     status      = Column( String )
     text        = Column( String )
