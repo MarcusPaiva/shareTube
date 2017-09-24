@@ -18,10 +18,10 @@ class SendNotification():
 		smtp.starttls()
 		#Start protocol
 
-		smtp.login('edemcare@gmail.com', 'mypasswd')
+		smtp.login('my_email@gmail.com', 'mypasswd')
 		#Server authentication
 
-		fromEmail = 'edemcare@gmail.com'
+		fromEmail = 'my_email@gmail.com'
 		#Origin email
 
 		msg = MIMEText( '%s'% message, 'html', 'utf-8' )
