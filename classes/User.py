@@ -6,7 +6,7 @@ class User( Base ):
     """
     Describe columns in table Users
     """
-    
+
     __tablename__ = 'users'
 
     id           = Column( Integer, primary_key = True )
